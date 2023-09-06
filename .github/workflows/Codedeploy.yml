@@ -31,4 +31,4 @@ jobs:
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
     - name: copy jar and war files to S3 bucket
-      run: aws s3 sync ./bundles/* s3://myhearst-demo
+      run: aws s3 sync ./bundles/* s3://mybucket-bappa
